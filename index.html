@@ -6,23 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SEARCH BAR</title>
     <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div id="container">
-      <div id="search">
-        <label for="searchInput">Search Users</label>
-        <input id="searchInput" type="text" />
-      </div>
-
-      <ul id="results">
-        <li class="name">Karl</li>
-        <li class="name">Per</li>
-        <li class="name">Katie</li>
-        <li class="name">Lupe</li>
-        <li class="name">Katherine</li>
-        <li class="name">Kelly</li>
-        <li class="name">Kurt</li>
-        <li class="name">Fred</li>
+    <div class="container">
+      <h1>Search</h1>
+      <input id="search-input" type="text" placeholder="search!" />
+      <ul>
+        <li class="item">Google</li>
+        <li class="item">Facebook</li>
+        <li class="item">Twitter</li>
+        <li class="item">Linkedin</li>
+        <li class="item">Youtube</li>
       </ul>
     </div>
     <script src="app.js"></script>

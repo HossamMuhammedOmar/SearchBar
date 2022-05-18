@@ -1,38 +1,59 @@
-html,
-body {
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-#container {
-  width: 600px;
-  margin: 0 auto;
-  margin-top: 20px;
-  background-color: royalblue;
-}
-
-#search {
-  display: flex;
-  padding: 20px;
-  background-color: orange;
-}
-
-#search label {
-  font-size: 24px;
-  font-weight: bold;
-  margin-right: 15px;
-}
-
-#results {
-  display: block;
-  padding: 10px;
-}
-
-#results .name {
+.container {
+  background-color: #1d2031;
   width: 100%;
-  padding: 10px 0;
+  min-height: 100vh;
+  color: #fff;
+  padding-top: 75px;
   text-align: center;
-  background-color: white;
-  margin-bottom: 10px;
-  list-style-type: none;
+  color: #dedede;
+}
+
+h1 {
+  font-size: 90px;
+  font-family: "Rubik Wet Paint", cursive;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 2px #e11d48;
+  margin-bottom: 75px;
+}
+
+input {
+  width: 390px;
+  height: 70px;
+  border-radius: 41px;
+  outline: none;
+  border: 3px solid #38bdf8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 0 20px;
+  font-size: 20px;
+}
+
+input::placeholder {
+  color: #b9b9b9;
+}
+
+ul {
+  margin: 0 auto;
+  width: 330px;
+  background: #eceff4;
+  border-radius: 0 0 53px 53px;
+  color: #3c3a4c;
+  font-size: 24px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  list-style: none;
+  padding-right: 45px;
+  padding-left: 45px;
+  padding-bottom: 35px;
+  padding-top: 10px;
+}
+
+li {
+  padding: 35px;
+  border-bottom: 1px solid #dddfe2;
 }

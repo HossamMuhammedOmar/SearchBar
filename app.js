@@ -1,13 +1,23 @@
-// FETCH INPUT AND SEARCH BUTTON
-const userInput = document.querySelector("#searchInput");
+// 1 => Select the input
+const searchInput = document.getElementById("search-input");
 
-// Create variable called "input" to store the user input
-let input;
+// 2 => Add keyup Event Listener to get the user input
+searchInput.addEventListener("keyup", (event) => {
+  let searchQuery = event.target.value.toLowerCase();
 
-// TEST => ALWAYS TEST YOUR WORK
-console.log(userInput); // ✔️
+  // Get all the list items and save it to variable
+  let allListItems = document.getElementsByClassName("item");
 
-userInput.addEventListener("keyup", (event) => {
-  input = event.target.value.toLowerCase();
-  console.log(input);
+  // Loop over the items and Create a conditional
+  // that checks if the item is equal to the
+  // user's search query!
+
+  for (let x = 0; x < allListItems.length; x++) {
+    const currentItem = allListItems[x].textContent.toLowerCase();
+    if (currentItem.includes(searchQuery)) {
+      allListItems[x].style.display = "block";
+    } else {
+      allListItems[x].style.display = "none";
+    }
+  }
 });
